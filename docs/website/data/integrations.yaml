@@ -744,6 +744,40 @@ integrations:
     code:
       - https://github.com/GluuFederation/gluu-gateway
 
+  pre-commit-hooks:
+    title: Pre-commit hooks
+    description: Pre-commit git hooks for OPA and Rego development
+    labels:
+      category: tooling
+      layer: cicd
+    software:
+      - git
+      - pre-commit
+    code:
+      - https://github.com/anderseknert/pre-commit-opa
+    blogs:
+      - https://www.eknert.com/tech/2020/08/31/pre-commit-hooks-for-opa
+    inventors:
+      - independent
+
+  scalr-iacp:
+    title: Scalr - Policy enforcement for Terraform
+    description: Scalr allows teams to easily collaborate on Terraform through its pipeline that runs all Terraform operations, policy checks, and stores state. Scalr uses OPA to check the auto-generated Terraform JSON plan to ensure that it meets your organization standards prior to an apply.
+    labels:
+      category: Infrastructure as Code
+      layer: cicd
+    software:
+      - Terraform
+      - Scalr
+    tutorials:
+      - https://iacp.docs.scalr.com/en/latest/working-with-iacp/opa.html#creating-the-opa-policy
+    code:
+      - https://github.com/Scalr/sample-tf-opa-policies
+    inventors:
+      - scalr
+    blogs:
+      - https://www.scalr.com/blog/opa-is-to-policy-automation-as-terraform-is-to-iac/
+
 organizations:
   styra:
     name: Styra
@@ -835,6 +869,12 @@ organizations:
   infoblox:
     name: InfoBlox
     link: https://www.infoblox.com/
+  independent:
+    name: Independent developer
+    link: https://www.openpolicyagent.org
+  scalr:
+    name: Scalr
+    link: https://www.scalr.com/
 
 software:
   kubernetes:
